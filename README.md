@@ -33,8 +33,7 @@ Fields used: `title`, `company_profile`, `description`, `requirements`, `benefit
    precision/recall/F1 and PR-AUC (ROC-AUC is misleading on this imbalance).
 4. **Explainability** (`src/interpret.py`): SHAP applied to the fine-tuned model's
    predictions, so each flagged posting comes with the words that pushed it toward
-   "fraudulent." Same explainability approach used in my [LendingClub credit risk
-   project](../lendingclub-credit-risk), applied here to text instead of tabular data.
+   "fraudulent." 
 5. **Demo** (`app/streamlit_app.py`): paste any job posting text and get a fraud
    probability and a highlighted explanation, live.
 
